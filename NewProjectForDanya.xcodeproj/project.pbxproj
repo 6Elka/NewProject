@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23E778A014C2C679509E6F76 /* Pods_NewProjectForDanya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB74C188FD3163ED439FCED /* Pods_NewProjectForDanya.framework */; };
+		ACC9752A29F6FA4D006E0C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9752929F6FA4D006E0C7C /* AppDelegate.swift */; };
+		ACC9752C29F6FA4D006E0C7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9752B29F6FA4D006E0C7C /* SceneDelegate.swift */; };
+		ACC9752E29F6FA4D006E0C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9752D29F6FA4D006E0C7C /* ViewController.swift */; };
+		ACC9753129F6FA4D006E0C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC9752F29F6FA4D006E0C7C /* Main.storyboard */; };
+		ACC9753329F6FA4E006E0C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC9753229F6FA4E006E0C7C /* Assets.xcassets */; };
+		ACC9753629F6FA4E006E0C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC9753429F6FA4E006E0C7C /* LaunchScreen.storyboard */; };
+		ACC9753E29F70335006E0C7C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9753D29F70335006E0C7C /* CustomButton.swift */; };
+		ACC9754029F703ED006E0C7C /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9753F29F703ED006E0C7C /* Resources.swift */; };
+		ACC9754229F70922006E0C7C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9754129F70922006E0C7C /* CustomLabel.swift */; };
+		ACC9754429F713C5006E0C7C /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9754329F713C5006E0C7C /* CustomImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DB74C188FD3163ED439FCED /* Pods_NewProjectForDanya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewProjectForDanya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC9752629F6FA4D006E0C7C /* NewProjectForDanya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProjectForDanya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC9752929F6FA4D006E0C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACC9752B29F6FA4D006E0C7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACC9752D29F6FA4D006E0C7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC9753029F6FA4D006E0C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACC9753229F6FA4E006E0C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACC9753529F6FA4E006E0C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACC9753729F6FA4E006E0C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC9753D29F70335006E0C7C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		ACC9753F29F703ED006E0C7C /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		ACC9754129F70922006E0C7C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		ACC9754329F713C5006E0C7C /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		B00DAA56636A2199D90E389F /* Pods-NewProjectForDanya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProjectForDanya.debug.xcconfig"; path = "Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya.debug.xcconfig"; sourceTree = "<group>"; };
+		F580402CA09A20D767BAE8A8 /* Pods-NewProjectForDanya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProjectForDanya.release.xcconfig"; path = "Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACC9752329F6FA4D006E0C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E778A014C2C679509E6F76 /* Pods_NewProjectForDanya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36C7342DCC084645245F9271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB74C188FD3163ED439FCED /* Pods_NewProjectForDanya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60AA7FC50C0B90C466F4288E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B00DAA56636A2199D90E389F /* Pods-NewProjectForDanya.debug.xcconfig */,
+				F580402CA09A20D767BAE8A8 /* Pods-NewProjectForDanya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACC9751D29F6FA4D006E0C7C = {
+			isa = PBXGroup;
+			children = (
+				ACC9752829F6FA4D006E0C7C /* NewProjectForDanya */,
+				ACC9752729F6FA4D006E0C7C /* Products */,
+				60AA7FC50C0B90C466F4288E /* Pods */,
+				36C7342DCC084645245F9271 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC9752729F6FA4D006E0C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9752629F6FA4D006E0C7C /* NewProjectForDanya.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACC9752829F6FA4D006E0C7C /* NewProjectForDanya */ = {
+			isa = PBXGroup;
+			children = (
+				ACC9752929F6FA4D006E0C7C /* AppDelegate.swift */,
+				ACC9752B29F6FA4D006E0C7C /* SceneDelegate.swift */,
+				ACC9752D29F6FA4D006E0C7C /* ViewController.swift */,
+				ACC9753D29F70335006E0C7C /* CustomButton.swift */,
+				ACC9754329F713C5006E0C7C /* CustomImage.swift */,
+				ACC9754129F70922006E0C7C /* CustomLabel.swift */,
+				ACC9753F29F703ED006E0C7C /* Resources.swift */,
+				ACC9752F29F6FA4D006E0C7C /* Main.storyboard */,
+				ACC9753229F6FA4E006E0C7C /* Assets.xcassets */,
+				ACC9753429F6FA4E006E0C7C /* LaunchScreen.storyboard */,
+				ACC9753729F6FA4E006E0C7C /* Info.plist */,
+			);
+			path = NewProjectForDanya;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACC9752529F6FA4D006E0C7C /* NewProjectForDanya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC9753A29F6FA4E006E0C7C /* Build configuration list for PBXNativeTarget "NewProjectForDanya" */;
+			buildPhases = (
+				C02E6109F13AB7D8DF28D501 /* [CP] Check Pods Manifest.lock */,
+				ACC9752229F6FA4D006E0C7C /* Sources */,
+				ACC9752329F6FA4D006E0C7C /* Frameworks */,
+				ACC9752429F6FA4D006E0C7C /* Resources */,
+				D4A0274D0F8F463AEE6A2AE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewProjectForDanya;
+			productName = NewProjectForDanya;
+			productReference = ACC9752629F6FA4D006E0C7C /* NewProjectForDanya.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACC9751E29F6FA4D006E0C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ACC9752529F6FA4D006E0C7C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ACC9752129F6FA4D006E0C7C /* Build configuration list for PBXProject "NewProjectForDanya" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACC9751D29F6FA4D006E0C7C;
+			productRefGroup = ACC9752729F6FA4D006E0C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC9752529F6FA4D006E0C7C /* NewProjectForDanya */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACC9752429F6FA4D006E0C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC9753629F6FA4E006E0C7C /* LaunchScreen.storyboard in Resources */,
+				ACC9753329F6FA4E006E0C7C /* Assets.xcassets in Resources */,
+				ACC9753129F6FA4D006E0C7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C02E6109F13AB7D8DF28D501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewProjectForDanya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A0274D0F8F463AEE6A2AE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACC9752229F6FA4D006E0C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC9754429F713C5006E0C7C /* CustomImage.swift in Sources */,
+				ACC9753E29F70335006E0C7C /* CustomButton.swift in Sources */,
+				ACC9754229F70922006E0C7C /* CustomLabel.swift in Sources */,
+				ACC9752E29F6FA4D006E0C7C /* ViewController.swift in Sources */,
+				ACC9752A29F6FA4D006E0C7C /* AppDelegate.swift in Sources */,
+				ACC9754029F703ED006E0C7C /* Resources.swift in Sources */,
+				ACC9752C29F6FA4D006E0C7C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACC9752F29F6FA4D006E0C7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC9753029F6FA4D006E0C7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACC9753429F6FA4E006E0C7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC9753529F6FA4E006E0C7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACC9753829F6FA4E006E0C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACC9753929F6FA4E006E0C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACC9753B29F6FA4E006E0C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00DAA56636A2199D90E389F /* Pods-NewProjectForDanya.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewProjectForDanya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Artemk.NewProjectForDanya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACC9753C29F6FA4E006E0C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F580402CA09A20D767BAE8A8 /* Pods-NewProjectForDanya.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewProjectForDanya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Artemk.NewProjectForDanya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACC9752129F6FA4D006E0C7C /* Build configuration list for PBXProject "NewProjectForDanya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC9753829F6FA4E006E0C7C /* Debug */,
+				ACC9753929F6FA4E006E0C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC9753A29F6FA4E006E0C7C /* Build configuration list for PBXNativeTarget "NewProjectForDanya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC9753B29F6FA4E006E0C7C /* Debug */,
+				ACC9753C29F6FA4E006E0C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACC9751E29F6FA4D006E0C7C /* Project object */;
+}
