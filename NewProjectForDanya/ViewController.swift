@@ -206,20 +206,15 @@ final class ViewController: UIViewController {
         }
     }
     
-    
-
+    //MARK: - Left / Right Button
     private func leftBarButtonItem() -> UIBarButtonItem {
-        let barButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left")?.withTintColor(.black, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(back))
+        let barButton = LeftBarButton()
         return barButton
     }
     
     private func rightBarButtonItem() -> UIBarButtonItem {
-        let barButton = UIBarButtonItem(image: UIImage(systemName: "exclamationmark.circle")?.withTintColor(.black, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(back))
+        let barButton = RightBarButton()
         return barButton
-    }
-    
-    @objc private func back() {
-        print("back")
     }
 
 }

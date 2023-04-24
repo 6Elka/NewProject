@@ -18,6 +18,7 @@
 		ACC9754029F703ED006E0C7C /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9753F29F703ED006E0C7C /* Resources.swift */; };
 		ACC9754229F70922006E0C7C /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9754129F70922006E0C7C /* CustomLabel.swift */; };
 		ACC9754429F713C5006E0C7C /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9754329F713C5006E0C7C /* CustomImage.swift */; };
+		ACC9754629F72C31006E0C7C /* CustomBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9754529F72C31006E0C7C /* CustomBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ACC9753F29F703ED006E0C7C /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		ACC9754129F70922006E0C7C /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		ACC9754329F713C5006E0C7C /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		ACC9754529F72C31006E0C7C /* CustomBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarButton.swift; sourceTree = "<group>"; };
 		B00DAA56636A2199D90E389F /* Pods-NewProjectForDanya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProjectForDanya.debug.xcconfig"; path = "Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya.debug.xcconfig"; sourceTree = "<group>"; };
 		F580402CA09A20D767BAE8A8 /* Pods-NewProjectForDanya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProjectForDanya.release.xcconfig"; path = "Target Support Files/Pods-NewProjectForDanya/Pods-NewProjectForDanya.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				ACC9752929F6FA4D006E0C7C /* AppDelegate.swift */,
 				ACC9752B29F6FA4D006E0C7C /* SceneDelegate.swift */,
 				ACC9752D29F6FA4D006E0C7C /* ViewController.swift */,
+				ACC9754529F72C31006E0C7C /* CustomBarButton.swift */,
 				ACC9753D29F70335006E0C7C /* CustomButton.swift */,
 				ACC9754329F713C5006E0C7C /* CustomImage.swift */,
 				ACC9754129F70922006E0C7C /* CustomLabel.swift */,
@@ -222,6 +225,7 @@
 				ACC9753E29F70335006E0C7C /* CustomButton.swift in Sources */,
 				ACC9754229F70922006E0C7C /* CustomLabel.swift in Sources */,
 				ACC9752E29F6FA4D006E0C7C /* ViewController.swift in Sources */,
+				ACC9754629F72C31006E0C7C /* CustomBarButton.swift in Sources */,
 				ACC9752A29F6FA4D006E0C7C /* AppDelegate.swift in Sources */,
 				ACC9754029F703ED006E0C7C /* Resources.swift in Sources */,
 				ACC9752C29F6FA4D006E0C7C /* SceneDelegate.swift in Sources */,

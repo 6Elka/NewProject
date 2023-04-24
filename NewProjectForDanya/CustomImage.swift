@@ -15,9 +15,9 @@ enum CustomImageState {
     var title: String {
         switch self {
         case .loader:
-            return LoaderImage.loader
+            return ImageName.loader
         case .imageUser:
-            return LoaderImage.user
+            return ImageName.user
         }
     }
     
@@ -43,7 +43,7 @@ final class SearchingImage: UIImageView {
     
     private func configure(type: CustomImageState) {
         self.type = type
-        self.image = UIImage(named: LoaderImage.loader)?.withTintColor(Color.pink, renderingMode: .alwaysOriginal)
+        self.image = UIImage(named: ImageName.loader)?.withTintColor(Color.pink, renderingMode: .alwaysOriginal)
         self.contentMode = type.contentMode
     }
 }
@@ -62,7 +62,7 @@ final class UserImage: UIImageView {
     
     private func configure(type: CustomImageState) {
         self.type = type
-        self.image = UIImage(named: LoaderImage.user)
+        self.image = UIImage(named: ImageName.user)
         self.contentMode = type.contentMode
     }
 }

@@ -37,9 +37,11 @@ enum Font {
     static let ubuntu = "Ubuntu-Medium"
 }
 
-enum LoaderImage {
+enum ImageName {
     static let loader = "Loader"
     static let user = "User"
+    static let left = "chevron.left"
+    static let right = "exclamationmark.circle"
 }
 
 extension UIView {
