@@ -15,6 +15,10 @@ enum Color {
     static let black = UIColor.black
     static let blue = UIColor.systemBlue
     static let lightGray = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+    static let green = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+    static let lightGreen = UIColor.green.withAlphaComponent(0.2)
+    static let lightPink = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1).withAlphaComponent(0.2)
+    static let lightBlue = UIColor.systemBlue.withAlphaComponent(0.2)
 }
 
 enum Text {
@@ -31,6 +35,13 @@ enum Text {
     static let beginPaymnet = "Начать покупки"
     static let wrongNumber = "Неправильный номер карты"
     static let nameCard = "Карта лояльности"
+    static let titleBottomSheet = "Убедитесь, что использовали нужную учетную запись"
+    static let textBottomSheet = "Если это неправильная учетная запись, выйдите из нее. Или обратитесь в поддержку"
+    static let exit = "Выйти"
+    static let callSupport = "Связаться с поддержкой"
+    static let call = "Звонок на горячую линию"
+    static let chat = "Чат с оператором"
+    static let writingToSupport = "Написать в техподдержку"
 }
 
 enum Font {
@@ -42,6 +53,10 @@ enum ImageName {
     static let user = "User"
     static let left = "chevron.left"
     static let right = "exclamationmark.circle"
+    static let back = "multiply"
+    static let call = "Call"
+    static let support = "Support"
+    static let chat = "Chat"
 }
 
 extension UIView {

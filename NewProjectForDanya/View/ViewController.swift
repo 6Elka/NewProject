@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 
+//MARK: - ViewController
 final class ViewController: UIViewController {
     
     //MARK: One state
@@ -37,7 +38,9 @@ final class ViewController: UIViewController {
         initialize()
 //        setupFirst()
 //        setupSecond()
-        setupThree()
+//        setupThree()
+        
+        setupBottomSheet()
     }
     
     private func initialize() {
@@ -47,7 +50,7 @@ final class ViewController: UIViewController {
         self.title = Text.nameCard
     }
     
-    //MARK: - Loading State
+    //MARK: - First State
     private func setupFirst() {
         setSearchCard()
         setSearchingCard()
@@ -206,7 +209,17 @@ final class ViewController: UIViewController {
         }
     }
     
-    //MARK: - Left / Right Button
+    //MARK: - BottomSheet
+    private func setupBottomSheet() {
+        let vc = BottomSheetViewCotroller()
+        let navVC = UINavigationController(rootViewController: vc)
+        if let sheet = navVC.sheetPresentationController {
+            sheet.detents = [.medium()]
+        }
+        navigationController?.present(navVC, animated: true)
+    }
+    
+    //MARK: - Left / Right Bar Button Item
     private func leftBarButtonItem() -> UIBarButtonItem {
         let barButton = LeftBarButton()
         return barButton
