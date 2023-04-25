@@ -38,95 +38,18 @@ enum CustomViewState {
     }
 }
 
-final class BottomView: UIView {
+final class CustomView: UIView {
     private var type: CustomViewState = .bottomView
     
     init() {
         super.init(frame: .zero)
-        configure(type: self.type)
     }
     
     required init?(coder: NSCoder) {
         fatalError()
     }
     
-    private func configure(type: CustomViewState) {
-        self.type = type
-        layer.cornerRadius = type.conrnerRadius
-        backgroundColor = type.backgroundColor
-    }
-}
-
-final class ImageView: UIView {
-    private var type: CustomViewState = .imageView
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomViewState) {
-        self.type = type
-        layer.cornerRadius = type.conrnerRadius
-        backgroundColor = type.backgroundColor
-    }
-}
-
-final class CallView: UIView {
-    private var type: CustomViewState = .callView
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomViewState) {
-        self.type = type
-        layer.cornerRadius = type.conrnerRadius
-        backgroundColor = type.backgroundColor
-    }
-}
-
-final class ChatView: UIView {
-    private var type: CustomViewState = .chatView
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomViewState) {
-        self.type = type
-        layer.cornerRadius = type.conrnerRadius
-        backgroundColor = type.backgroundColor
-    }
-}
-
-final class SupportView: UIView {
-    private var type: CustomViewState = .supportView
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomViewState) {
+    func configure(type: CustomViewState) {
         self.type = type
         layer.cornerRadius = type.conrnerRadius
         backgroundColor = type.backgroundColor

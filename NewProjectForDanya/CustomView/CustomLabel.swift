@@ -53,9 +53,9 @@ enum CustomLabelState {
     
     var textColor: UIColor {
         switch self {
-        case .searchCard, .searchingCard, .unregisteredCard, .getCard, .welcomeUser, .registeredNumber, .titleBottomSheet, .call, .chat, .writeToSupport:
+        case .searchCard, .searchingCard, .unregisteredCard, .getCard, .welcomeUser, .titleBottomSheet, .call, .chat, .writeToSupport:
             return Color.black
-        case .needHelp, .textBottomSheet:
+        case .needHelp, .textBottomSheet, .registeredNumber:
             return Color.lightGray
         }
     }
@@ -82,14 +82,42 @@ enum CustomLabelState {
             return .regular
         }
     }
+    
+    var size: CGFloat {
+        switch self {
+        case .searchCard:
+            return 20
+        case .searchingCard:
+            return 17
+        case .unregisteredCard:
+            return 20
+        case .getCard:
+            return 17
+        case .needHelp:
+            return 16
+        case .welcomeUser:
+            return 20
+        case .registeredNumber:
+            return 17
+        case .titleBottomSheet:
+            return 20
+        case .textBottomSheet:
+            return 18
+        case .call:
+            return 18
+        case .chat:
+            return 18
+        case .writeToSupport:
+            return 18
+        }
+    }
 }
 
-final class SearchCard: UILabel {
+final class CustomLabel: UILabel {
     private var type: CustomLabelState = .searchCard
     
     init() {
         super.init(frame: .zero)
-        configure(type: self.type)
     }
     
     required init?(coder: NSCoder) {
@@ -102,248 +130,6 @@ final class SearchCard: UILabel {
         textColor = type.textColor
         numberOfLines = type.numberOfLines
         textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 20, weight: type.weight)
-    }
-}
-
-final class SearchingCard: UILabel {
-    private var type: CustomLabelState = .searchingCard
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class UnRegisteredCard: UILabel {
-    private var type: CustomLabelState = .unregisteredCard
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 20, weight: type.weight)
-    }
-}
-
-final class GetCard: UILabel {
-    private var type: CustomLabelState = .getCard
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class NeedHelp: UILabel {
-    private var type: CustomLabelState = .needHelp
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class WelcomeUser: UILabel {
-    private var type: CustomLabelState = .welcomeUser
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 20, weight: type.weight)
-    }
-}
-
-final class RegisteredNumber: UILabel {
-    private var type: CustomLabelState = .registeredNumber
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class TitleBottomSheet: UILabel {
-    private var type: CustomLabelState = .titleBottomSheet
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 20, weight: type.weight)
-    }
-}
-
-final class TextBottomSheet: UILabel {
-    private var type: CustomLabelState = .textBottomSheet
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 20, weight: type.weight)
-    }
-}
-
-final class CallText: UILabel {
-    private var type: CustomLabelState = .call
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class ChatText: UILabel {
-    private var type: CustomLabelState = .chat
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
-    }
-}
-
-final class WriteToSupportText: UILabel {
-    private var type: CustomLabelState = .writeToSupport
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(type: CustomLabelState) {
-        self.type = type
-        text = type.title
-        textColor = type.textColor
-        numberOfLines = type.numberOfLines
-        textAlignment = type.textAlignment
-        font = .systemFont(ofSize: 17, weight: type.weight)
+        font = .systemFont(ofSize: type.size, weight: type.weight)
     }
 }

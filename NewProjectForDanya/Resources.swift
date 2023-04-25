@@ -25,7 +25,7 @@ enum Text {
     static let getNewcard = "Получить новую карту"
     static let activatedCard = "Активировать пластиковую карту"
     static let searchCard = "Поиск карты"
-    static let searcingCard = "Ищем новую карту лояльности, привязанную к номеру + 7(930)270-06-79"
+    static let searcingCard = "Ищем карту лояльности, привязанную к номеру + 7(930)270-06-79"
     static let unregisteredCard = "На номер +7(930)270-06-79 не зарегистрированна карта лояльности"
     static let getCard = "Получите новую карту или активируйте пластиковую карту, выданную в магазине."
     static let support = "Напишите в поддержку"

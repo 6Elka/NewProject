@@ -56,116 +56,24 @@ enum CustomImageState {
     }
 }
 
-final class SearchingImage: UIImageView {
+final class CustomImage: UIImageView {
     private var type: CustomImageState = .loader
     
     init() {
         super.init(frame: .zero)
-        configure(type: self.type)
     }
     
     required init?(coder: NSCoder) {
         fatalError()
     }
     
-    private func configure(type: CustomImageState) {
+    func configure(type: CustomImageState) {
         self.type = type
-        self.image = UIImage(named: ImageName.loader)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
-        self.contentMode = type.contentMode
-    }
-}
-
-final class UserImage: UIImageView {
-    private var type: CustomImageState = .imageUser
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomImageState) {
-        self.type = type
-        self.image = UIImage(named: ImageName.user)
-        self.contentMode = type.contentMode
-    }
-}
-
-final class ImageBack: UIImageView {
-    private var type: CustomImageState = .back
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomImageState) {
-        self.type = type
-        self.image = UIImage(systemName: ImageName.back)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
-        self.contentMode = type.contentMode
-    }
-}
-
-final class ImageCall: UIImageView {
-    private var type: CustomImageState = .call
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomImageState) {
-        self.type = type
-        self.image = UIImage(named: ImageName.call)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
-        self.contentMode = type.contentMode
-    }
-}
-
-final class ImageChat: UIImageView {
-    private var type: CustomImageState = .chat
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomImageState) {
-        self.type = type
-        self.image = UIImage(named: ImageName.chat)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
-        self.contentMode = type.contentMode
-    }
-}
-
-final class ImageSupport: UIImageView {
-    private var type: CustomImageState = .support
-    
-    init() {
-        super.init(frame: .zero)
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomImageState) {
-        self.type = type
-        self.image = UIImage(named: ImageName.support)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
+        if type == .imageUser {
+            self.image = UIImage(named: ImageName.user)
+        } else {
+            self.image = UIImage(named: type.title)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal) ?? UIImage(systemName: type.title)?.withTintColor(type.tintColor, renderingMode: .alwaysOriginal)
+        }
         self.contentMode = type.contentMode
     }
 }

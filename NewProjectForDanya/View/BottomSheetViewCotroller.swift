@@ -13,19 +13,47 @@ import SnapKit
 final class BottomSheetViewCotroller: UIViewController {
     
     //MARK: View
-    private let bottomView = BottomView()
+    private lazy var bottomView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .bottomView)
+        return view
+    }()
     
     //MARK: Text Label
-    private let titleBottom = TitleBottomSheet()
-    private let textBottom = TextBottomSheet()
+    private lazy var titleBottom: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .titleBottomSheet)
+        return label
+    }()
+    private lazy var textBottom: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .textBottomSheet)
+        return label
+    }()
     
     //MARK: Button
-    private let exit = Exit()
-    private let callSupport = CallSupport()
+    private lazy var exit: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .exit)
+        return button
+    }()
+    private lazy var callSupport: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .callSupport)
+        return button
+    }()
     
     //MARK: Image Back
-    private let imageBack = ImageBack()
-    private let imageView = ImageView()
+    private lazy var imageBack: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .back)
+        return image
+    }()
+    private lazy var imageView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .imageView)
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

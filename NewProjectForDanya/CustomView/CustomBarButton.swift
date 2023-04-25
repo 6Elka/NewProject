@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum CustomBarButton {
+enum CustomBarButtonState {
     case left
     case right
     
@@ -29,42 +29,18 @@ enum CustomBarButton {
     }
 }
 
-final class LeftBarButton: UIBarButtonItem {
-    private var type: CustomBarButton = .left
+final class CustomBarButton: UIBarButtonItem {
+    private var type: CustomBarButtonState = .left
     
     override init() {
         super.init()
-        configure(type: self.type)
     }
     
     required init?(coder: NSCoder) {
         fatalError()
     }
     
-    private func configure(type: CustomBarButton) {
-        image = UIImage(systemName: type.systemName)?.withTintColor(.black, renderingMode: .alwaysOriginal)
-        style = type.style
-        action = #selector(back)
-    }
-    
-    @objc private func back() {
-        print("back")
-    }
-}
-
-final class RightBarButton: UIBarButtonItem {
-    private var type: CustomBarButton = .right
-    
-    override init() {
-        super.init()
-        configure(type: self.type)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
-    private func configure(type: CustomBarButton) {
+    func configure(type: CustomBarButtonState) {
         image = UIImage(systemName: type.systemName)?.withTintColor(.black, renderingMode: .alwaysOriginal)
         style = type.style
         action = #selector(back)

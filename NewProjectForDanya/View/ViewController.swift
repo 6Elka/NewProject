@@ -12,25 +12,81 @@ import SnapKit
 final class ViewController: UIViewController {
     
     //MARK: One state
-    private let searchCard = SearchCard()
-    private let searchingCard = SearchingCard()
-    private let searchImageView = SearchingImage()
+    private lazy var searchCard: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .searchCard)
+        return label
+    }()
+    private lazy var searchingCard: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .searchingCard)
+        return label
+    }()
+    private lazy var searchImageView: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .loader)
+        return image
+    }()
     private let someView = UIView()
     
     //MARK: - Two state
-    private let unregisteredCard = UnRegisteredCard()
-    private let textCard = GetCard()
-    private let getNewCard = GetNewCard()
-    private let activetedCard = ActivatedCard()
-    private let needHelp = NeedHelp()
-    private let support = Support()
+    private lazy var unregisteredCard: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .unregisteredCard)
+        return label
+    }()
+    private lazy var textCard: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .getCard)
+        return label
+    }()
+    private lazy var getNewCard: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .getNewCard)
+        return button
+    }()
+    private lazy var activetedCard: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .activetedCard)
+        return button
+    }()
+    private lazy var needHelp: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .needHelp)
+        return label
+    }()
+    private lazy var support: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .support)
+        return button
+    }()
     
     //MARK: - Three state
-    private let userImage = UserImage()
-    private let welcomeUser = WelcomeUser()
-    private let registeredNumber = RegisteredNumber()
-    private let payment = Payment()
-    private let wrongNumber = WrongNumber()
+    private lazy var userImage: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .imageUser)
+        return image
+    }()
+    private lazy var welcomeUser: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .welcomeUser)
+        return label
+    }()
+    private lazy var registeredNumber: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .registeredNumber)
+        return label
+    }()
+    private lazy var payment: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .payment)
+        return button
+    }()
+    private lazy var wrongNumber: CustomButton = {
+        let button = CustomButton()
+        button.configure(type: .wrongNumber)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -221,13 +277,21 @@ final class ViewController: UIViewController {
     
     //MARK: - Left / Right Bar Button Item
     private func leftBarButtonItem() -> UIBarButtonItem {
-        let barButton = LeftBarButton()
-        return barButton
+        lazy var leftBarButton: CustomBarButton = {
+            let btn = CustomBarButton()
+            btn.configure(type: .left)
+            return btn
+        }()
+        return leftBarButton
     }
     
     private func rightBarButtonItem() -> UIBarButtonItem {
-        let barButton = RightBarButton()
-        return barButton
+        lazy var rightBarButton: CustomBarButton = {
+            let btn = CustomBarButton()
+            btn.configure(type: .right)
+            return btn
+        }()
+        return rightBarButton
     }
 
 }

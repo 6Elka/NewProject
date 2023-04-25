@@ -13,23 +13,67 @@ import SnapKit
 final class BottomSheetSupport: UIViewController {
     
     //MARK: View
-    private let callView = CallView()
-    private let chatView = ChatView()
-    private let supportView = SupportView()
+    private lazy var callView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .callView)
+        return view
+    }()
+    private lazy var chatView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .chatView)
+        return view
+    }()
+    private lazy var supportView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .supportView)
+        return view
+    }()
     
     //MARK: Text Label
-    private let callText = CallText()
-    private let chatText = ChatText()
-    private let writeToSupportText = WriteToSupportText()
+    private lazy var callText: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .call)
+        return label
+    }()
+    private lazy var chatText: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .chat)
+        return label
+    }()
+    private lazy var writeToSupportText: CustomLabel = {
+        let label = CustomLabel()
+        label.configure(type: .writeToSupport)
+        return label
+    }()
     
     //MARK: Image
-    private let imageCall = ImageCall()
-    private let imageChat = ImageChat()
-    private let imageSupport = ImageSupport()
+    private lazy var imageCall: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .call)
+        return image
+    }()
+    private lazy var imageChat: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .chat)
+        return image
+    }()
+    private lazy var imageSupport: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .support)
+        return image
+    }()
     
     //MARK: Image Back
-    private let imageBack = ImageBack()
-    private let imageView = ImageView()
+    private lazy var imageBack: CustomImage = {
+        let image = CustomImage()
+        image.configure(type: .back)
+        return image
+    }()
+    private lazy var imageView: CustomView = {
+        let view = CustomView()
+        view.configure(type: .imageView)
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
